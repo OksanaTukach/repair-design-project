@@ -1,8 +1,54 @@
+@font-face {
+    font-family: 'fontcf181c908f12bcf3eb2f1dfdb2f97d01';
+        
+        src:    url('https://nomail.com.ua/files/eot/cf181c908f12bcf3eb2f1dfdb2f97d01.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/cf181c908f12bcf3eb2f1dfdb2f97d01.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/cf181c908f12bcf3eb2f1dfdb2f97d01.woff2') format('woff2');
+    }
+    
+    @font-face { font-family: 'FuturaBookC';  src: local('FuturaBookC'), url('https://nomail.com.ua/files/woff/cf181c908f12bcf3eb2f1dfdb2f97d01.woff') format('woff'); }
+@font-face {
+    font-family: 'fontcb401f6ff510dca7f9c2eb1894b09e79';
+            
+        src:    url('https://nomail.com.ua/files/eot/cb401f6ff510dca7f9c2eb1894b09e79.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/cb401f6ff510dca7f9c2eb1894b09e79.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/cb401f6ff510dca7f9c2eb1894b09e79.woff2') format('woff2');
+    }
+        
+    @font-face { font-family: 'FuturaDemiC';  src: local('FuturaDemiC'), url('https://nomail.com.ua/files/woff/cb401f6ff510dca7f9c2eb1894b09e79.woff') format('woff'); }
+
+@font-face {
+    font-family: 'font047c56cc37e017c6be47821ec5cac9de';
+            
+        src:    url('https://nomail.com.ua/files/eot/047c56cc37e017c6be47821ec5cac9de.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/047c56cc37e017c6be47821ec5cac9de.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/047c56cc37e017c6be47821ec5cac9de.woff2') format('woff2');
+    }
+        
+    @font-face { font-family: 'FuturaMediumC';  src: local('FuturaMediumC'), url('https://nomail.com.ua/files/woff/047c56cc37e017c6be47821ec5cac9de.woff') format('woff'); }
+
+@font-face {
+    font-family: 'fontaee5e23445ebb8aaca3747470069d3a9';
+            
+        src:    url('https://nomail.com.ua/files/eot/aee5e23445ebb8aaca3747470069d3a9.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/aee5e23445ebb8aaca3747470069d3a9.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/aee5e23445ebb8aaca3747470069d3a9.woff2') format('woff2');
+    }
+        
+    @font-face { font-family: 'ProximaNova-LightCondensed';  src: local('ProximaNova-LightCondensed'), url('https://nomail.com.ua/files/woff/aee5e23445ebb8aaca3747470069d3a9.woff') format('woff'); }
 body {
     width: 100%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    @media (max-width:375px) {
+        width: 375px;
+        position: relative;
+    }
+    @media (min-width:1440px) {
+        width:1440px;
+        position: relative;
+    }
 }
 video{
     object-fit: inherit;
@@ -34,10 +80,14 @@ video{
         width: 150px;
         margin-top: -16px;
         margin-left: 70%;
+        a {
+            color: white;
+            text-decoration: none;
+        }
         @media (max-width:1200px) {
             margin-top: 30px;
             margin-left: 50%;
-            font-family: FuturaDemiC;
+            font-family: 'FuturaDemiC';
             font-size: 12px;
             line-height: 14px;
             text-align: right;
@@ -124,7 +174,7 @@ video{
             
             p{
                 transform: rotate(90deg);
-                font-family: FuturaDemiC;
+                font-family: 'FuturaDemiC';
                 font-size: 20px;
                 line-height: 16px;
                 text-align: center;
@@ -178,7 +228,7 @@ video{
             }
         }
         &__text2 {
-            font-family: FuturaBookC;
+            font-family: 'FuturaBookC';
             font-size: 22px;
             line-height: 30px;
             color: #FFFFFF;
@@ -202,13 +252,13 @@ video{
             box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
             border-radius: 2px;
             color: white;
-            font-family: FuturaDemiC;
+            font-family: 'FuturaDemiC';
             margin-left: 50px;
             margin-top: 20px;
             @media (max-width:700px) {
                 width: 338px;
                 height: 51px;
-                font-family: FuturaDemiC;
+                font-family: 'FuturaDemiC';
                 font-size: 13px;
                 line-height: 15px;
                 text-align: center;
@@ -227,12 +277,12 @@ video{
             background-color: transparent;
             overflow: hidden;
             color: white;
-            font-family: FuturaDemiC;
+            font-family: 'FuturaDemiC';
             margin-left: 20px;
             @media (max-width:700px) {
                 width: 338px;
                 height: 51px;
-                font-family: FuturaDemiC;
+                font-family: 'FuturaDemiC';
                 font-size: 13px;
                 line-height: 15px;
                 text-align: center;
@@ -329,7 +379,7 @@ video{
                 color: #E3B873;
             }
             .text__2 {
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 width: 440px;
                 font-size: 18px;
                 line-height: 29px;
@@ -348,6 +398,8 @@ video{
                     height: 242px;
                     @media (max-width:700px) {
                         display: block;
+                        margin-left: auto;
+                        margin-right: auto;
                     }
                 }
             }   
@@ -360,12 +412,14 @@ video{
             width: 440px;
             grid-gap: 40px;
             margin-top: 60px;
-            font-family: FuturaBookC;
+            font-family: 'FuturaBookC';
             font-size: 15px;
             line-height: 20px;
             color: #FFFFFF;
             @media (max-width:1150px) {
                 width: 80%;
+                margin-left: auto;
+                margin-right: auto;
             }
             span{
                 font-family: 'Yeseva One', cursive;
@@ -404,7 +458,79 @@ video{
             position: absolute;
             left: 90%;
             top: 1150px;
+            img {
+                width: 55px;
+                height: 55px;
+                @media (max-width:700px){
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            @media (max-width:1150px) {
+                left: 75%;
+                top: 1400px;
+            }
+            @media (max-width:850px) {
+                left: 80%;
+                top: 1400px;
+            }
+            @media (max-width:750px) {
+                left: 85%;
+                top: 1450px;
+            }
+            @media (max-width:700px) {
+                top: 800px;
+                left:65%;
+            }
+            @media (max-width:500px) {
+                top: 850px;
+                left:75%;
+            }
+            @media (max-width:400px) {
+                top: 860px;
+                left:75%;
+            }
+        }
+        &__btn-left {
             display: none;
+            img {
+                width: 55px;
+                height: 55px;
+                @media (max-width:700px){
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            @media (max-width:1150px) {
+                display: block;
+                position: absolute;
+                left:20%;
+                top:1400px;
+            }
+            @media (max-width:850px) {
+                display: block;
+                position: absolute;
+                left: 15%;
+                top: 1400px;
+            }
+            @media (max-width:750px) {
+                display: block;
+                position: absolute;
+                left: 10%;
+                top: 1450px;
+            }
+            @media (max-width:700px) {
+                top: 800px;
+                left:30%;
+            }
+            @media (max-width:500px) {
+                top: 850px;
+                left:20%;
+            }
+            @media (max-width:400px) {
+                top: 860px;
+                left:15%;
+            }
         }
         &__camera{
             font-family: 'Yeseva One', cursive;
@@ -490,7 +616,7 @@ video{
             margin-right: auto;
             padding-top: 300px;
             width: 650px;
-            font-family: FuturaBookC;
+            font-family: 'FuturaBookC';
             font-size: 20px;
             line-height: 34px;
             text-align: center;
@@ -498,7 +624,7 @@ video{
             @media (max-width:700px) {
                 width: 340px;
                 padding-top: 0;
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 14px;
                 line-height: 24px;
                 text-align: center;
@@ -525,7 +651,7 @@ video{
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 30px;
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 16px;
                 line-height: 22px;
                 color: #FFFFFF;
@@ -541,7 +667,7 @@ video{
                 font-size: 15px;
                 line-height: 20px;
                 color: rgba(54, 54, 54, 0.5);
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 @media (max-width:700px){
                     color: rgba(255, 255, 255, 0.5);
                 }
@@ -551,7 +677,7 @@ video{
                 border-top: none;
                 border-left: none;
                 border-right: none;
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 18px;
                 line-height: 24px;
                 color: #363636;
@@ -560,7 +686,7 @@ video{
                 @media (max-width:700px){
                     width: 340px;
                     background-color: #131313;
-                    font-family: FuturaBookC;
+                    font-family: 'FuturaBookC';
                     font-size: 18px;
                     line-height: 25px;
                     color: #FFFFFF;
@@ -573,22 +699,26 @@ video{
                 height: 50px;
                 background-color: #E3B873;
                 border-bottom: none;
-                font-family: FuturaDemiC;
+                font-family: 'FuturaDemiC';
                 font-size: 15px;
                 line-height: 26px;
                 text-align: center;
                 text-transform: uppercase;
                 color: #FFFFFF;
                 box-shadow: -1px 4px 11px -2px rgba(0,0,0,0.75);
+                @media (max-width:760px) {
+                    width:170px
+                }
                 @media (max-width:700px){
                     width: 340px;
                     margin-top: 50px;
+                    margin-left: auto;
                 }
             }
             &__agree {
                 font-size: 16px;
                 line-height: 22px;
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 color: #181818;
                 width: 400px;
                 left: 0;
@@ -607,7 +737,7 @@ video{
         height: 890px;
         background-color: rgb(255, 255, 255);
         @media (max-width:1035px){
-            height: 1050px;
+            height: 1100px;
         }
         @media (max-width:697px){
             height:1909px;
@@ -651,7 +781,7 @@ video{
             &__text{
                 width: 330px;
                 height: 290px;
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 background-image: url(./assets/image/block5background.PNG);
                 justify-content: center;
                 align-items: center; 
@@ -719,13 +849,149 @@ video{
         background-color: rgb(255, 255, 255);
         display: flex;
         flex-wrap: wrap;
-        @media (max-width:697px){
+        @media (max-width:1035px){
             display: none;
         }
 
 
         &__circle {
-            flex-basis: 50%;
+            flex-basis: 60%;
+            background: url(./assets/image/main_block6_image_house.png) no-repeat;
+            position: relative;
+            margin-left: -80px;
+            .ellipse {
+                margin-left: -139px;
+                margin-top: -30px;
+                height: 800px;
+                width: 800px;
+            }
+
+            .circle-text {
+                .one {
+                    .circle {
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 50%;
+                        border: 5px solid white;
+                        background-color: #E3B873;
+                        font-family: 'Yeseva One', cursive;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        position: absolute;
+                        top: 113px;
+                        left: 400px;
+                        p{
+                            margin-top: 8px;
+                        }
+                    }
+                    .text {
+                        position: absolute;
+                        top: 113px;
+                        left: 463px;
+                        font-family: 'FuturaMediumC';
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #363636; 
+                    }
+                }
+                .two {
+                    .circle {
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 50%;
+                        border: 5px solid white;
+                        background-color: #E3B873;
+                        font-family: 'Yeseva One', cursive;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        position: absolute;
+                        top: 243px;
+                        left: 486px;
+                        p{
+                            margin-top: 8px;
+                        }
+                    }
+                    .text {
+                        position: absolute;
+                        top: 243px;
+                        left: 550px;
+                        font-family: 'FuturaMediumC';
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #363636; 
+                    }
+                }
+                .three {
+                    .circle {
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 50%;
+                        border: 5px solid white;
+                        background-color: #E3B873;
+                        font-family: 'Yeseva One', cursive;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        position: absolute;
+                        top: 400px;
+                        left: 500px;
+                        p{
+                            margin-top: 8px;
+                        }
+                    }
+                    .text {
+                        position: absolute;
+                        top: 400px;
+                        left: 560px;
+                        font-family: 'FuturaMediumC';
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #363636; 
+                    }
+                }
+                .four {
+                    .circle {
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 50%;
+                        border: 5px solid white;
+                        background-color: #E3B873;
+                        font-family: 'Yeseva One', cursive;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        position: absolute;
+                        top: 573px;
+                        left: 414px;
+                        p{
+                            margin-top: 8px;
+                        }
+                    }
+                    .text {
+                        position: absolute;
+                        top: 573px;
+                        left: 480px;
+                        font-family: 'FuturaMediumC';
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #363636; 
+                    }
+                }
+            }
             @media (max-width: 1360px) {
                 flex-basis: 80%;   
             }
@@ -752,21 +1018,21 @@ video{
             }
 
             span{
-                font-family: FuturaDemiC;
+                font-family: 'FuturaDemiC';
                 font-size: 20px;
                 line-height: 25px;
                 text-align: center;
                 color: #FFFFFF;
             }
             label {
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 margin-left: 20px;
                 font-size: 15px;
                 line-height: 20px;
                 color: rgba(255, 255, 255, 0.5);
 
                 .checkbox{
-                    font-family: FuturaBookC;
+                    font-family: 'FuturaBookC';
                     font-size: 16px;
                     line-height: 22px;
                     color: #FFFFFF;
@@ -781,7 +1047,7 @@ video{
                 border-left: none;
                 border-right: none;
                 border-bottom-color: rgb(31, 30, 30);
-                font-family: FuturaMediumC;
+                font-family: 'FuturaMediumC';
                 font-size: 18px;
                 line-height: 24px;
                 color: white;
@@ -802,7 +1068,7 @@ video{
                 vertical-align: top;
                 display: inline-block;
                 margin-top: 20px;
-                font-family: FuturaDemiC;
+                font-family: 'FuturaDemiC';
                 font-size: 20px;
                 line-height: 25px;
                 color: #E3B873;
@@ -847,14 +1113,14 @@ video{
                 color: #E3B873;
             }
             a {
-                font-family: Proxima Nova;
+                font-family: 'ProximaNova-LightCondensed';
                 font-size: 20px;
                 line-height: 34px;
                 color: #FFFFFF;
                 text-decoration: none;
             }
             .checked {
-                font-family: Proxima Nova;
+                font-family: 'ProximaNova-LightCondensed';
                 font-size: 20px;
                 line-height: 34px;
                 color: #E3B873;
@@ -918,6 +1184,81 @@ video{
                     width: 340px;
                     height: 242px;
                 } 
+            }
+            .btn-right {
+                a{
+                    img {
+                        width: 36px;
+                        height: 36px;
+                        position: absolute;
+                        @media (max-width:1335px) {
+                            top:4880px;
+                            right: 8%;
+                        }
+                        @media (max-width:1150px) {
+                            top: 5100px;
+                            right: 3%;
+                        }
+                        @media (max-width:1035px) {
+                            top:4320px;
+                        }
+                        @media (max-width:1000px) {
+                            top:4150px;
+                            right: 20%;
+                        }
+                        @media (max-width:780px) {
+                            top:4150px;
+                            right: 10%;
+                        }
+                        @media (max-width:700px) {
+                            top:3500px;
+                            right: 30%;
+                        }
+                        @media (max-width:650px) {
+                            top:3500px;
+                            right: 30%;
+                        }
+                        @media (max-width:697px) {
+                            top:4320px;
+                            right: 25%;
+                        }
+                        @media (max-width:580px) {
+                            top:4320px;
+                            right: 15%;
+                        }
+                        @media (max-width:400px) {
+                            top:4320px;
+                            right: 4%;
+                        }
+                    }
+                }
+            } 
+            .btn-left {
+                a{
+                    img {
+                        width: 36px;
+                        height: 36px;
+                        position: absolute;
+                        @media (max-width:1335px) {
+                            top:4880px;
+                        }
+                        @media (max-width:1150px) {
+                        top: 5100px;
+                        }
+                        @media (max-width:1035px) {
+                            top:4320px;
+                        }
+                        @media (max-width:1000px) {
+                            top:4150px;
+                        }
+                        @media (max-width:700px) {
+                            top:3500px;
+                        }
+                        @media (max-width:697px) {
+                            top:4320px;
+                        }
+                    }
+                }
             } 
             @media (min-width: 1335px) {
                 display: none;    
@@ -970,14 +1311,14 @@ video{
             left: 0;
             width: 70%;
             margin: auto;
-            font-family: FuturaBookC;
+            font-family: 'FuturaBookC';
             font-size: 20px;
             line-height: 27px;
             text-align: center;
             color: #363636;
             padding-top: 150px;
             @media (max-width:1036px){
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 15px;
                 line-height: 20px;
                 text-align: center;
@@ -1022,7 +1363,7 @@ video{
                 }
             }
             &__text{
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 background-color: white;
                 justify-content: center;
                 align-items: center; 
@@ -1146,7 +1487,7 @@ video{
                 text-transform: uppercase;
                 color: #E3B873;
                 span {
-                    font-family: FuturaDemiC;
+                    font-family: 'FuturaDemiC';
                     font-size: 15px;
                     line-height: 21px;
                     text-transform: uppercase;
@@ -1155,7 +1496,7 @@ video{
                 }
             }
             &__two {
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 15px;
                 line-height: 25px;
                 color: #FFFFFF;
@@ -1190,7 +1531,7 @@ video{
                     width: 30%;
                     margin: 10px 10px 40px;
                     a{
-                    font-family: FuturaBookC;
+                    font-family: 'FuturaBookC';
                     font-size: 15px;
                     line-height: 18px;
                     text-decoration: none;
@@ -1220,7 +1561,7 @@ video{
             color: #FFFFFF;
         }
         p {
-            font-family: FuturaBookC;
+            font-family: 'FuturaBookC';
             font-size: 20px;
             line-height: 27px;
             text-align: center;
@@ -1335,7 +1676,7 @@ video{
             padding-top: 20px; 
             
             p{
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 20px;
                 line-height: 27px;
                 text-align: center;
@@ -1388,10 +1729,9 @@ video{
                 margin-left: 30px;
             }
             p {
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 15px;
                 line-height: 180%;
-                /* or 27px */
                 color: #959595;
                 text-transform: lowercase;
                 display: inline-block;
@@ -1483,13 +1823,17 @@ video{
                 flex-basis: 100%;
                 text-align: center;
             }
+            @media (max-width:500px){
+                flex-basis: 100%;
+                text-align: start;
+            }
             input {
                 width: 230px;
                 border-top: none;
                 border-left: none;
                 border-right: none;
                 border-bottom-color: #363636;
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 18px;
                 line-height: 24px;
                 color: #FFFFFF;
@@ -1509,13 +1853,17 @@ video{
                 flex-basis: 100%;
                 text-align: center;
             }
+            @media (max-width:500px){
+                flex-basis: 100%;
+                text-align: start;
+            }
             input {
                 width: 230px;
                 border-top: none;
                 border-left: none;
                 border-right: none;
                 border-bottom-color: #363636;
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 18px;
                 line-height: 24px;
                 color: #FFFFFF;
@@ -1534,13 +1882,17 @@ video{
                 flex-basis: 100%;
                 text-align: center;
             }
+            @media (max-width:500px){
+                flex-basis: 100%;
+                text-align: start;
+            }
             input {
                 width:516px;
                 border-top: none;
                 border-left: none;
                 border-right: none;
                 border-bottom-color: #363636;
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 18px;
                 line-height: 24px;
                 color: #FFFFFF;
@@ -1565,7 +1917,7 @@ video{
                 height: 50px;
                 background: #E3B873;
                 box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
-                font-family: FuturaDemiC;
+                font-family: 'FuturaDemiC';
                 font-size: 15px;
                 line-height: 26px;
                 text-align: center;
@@ -1581,13 +1933,13 @@ video{
 
         label {
             margin-left: 20px;
-            font-family: FuturaBookC;
+            font-family: 'FuturaBookC';
             font-size: 15px;
             line-height: 20px;
             color: rgba(255, 255, 255, 0.5);
 
             .checkbox{
-                font-family: FuturaBookC;
+                font-family: 'FuturaBookC';
                 font-size: 16px;
                 line-height: 22px;
                 color: #FFFFFF;
@@ -1610,7 +1962,7 @@ video{
         &__map{
             text-align: center;
             img{
-                @media (max-width:1000px){
+                @media (max-width:1010px){
                     width: 600px;
                     height: 350px;
                 }
@@ -1659,7 +2011,7 @@ video{
     }
     
     &__logo {
-        font-family: FuturaDemiC;
+        font-family: 'FuturaDemiC';
         font-size: 14px;
         line-height: 16px;
         text-transform: uppercase;
@@ -1670,7 +2022,7 @@ video{
         margin-top: 70px;
     }
     &__tel {
-        font-family: FuturaDemiC;
+        font-family: 'FuturaDemiC';
         color: #E3B873;
         text-decoration: underline;
         width: 150px;
@@ -1683,7 +2035,7 @@ video{
     }
     &__button {
         width: 160px;
-        font-family: FuturaDemiC;
+        font-family: 'FuturaDemiC';
         color: white;
         height: 40px;
         margin-top: -30px;
@@ -1695,7 +2047,7 @@ video{
         input {
             width: 160px;
             background-color: #E3B873;
-            font-family: FuturaDemiC;
+            font-family: 'FuturaDemiC';
             height: 40px;
             font-size: 13px;
             line-height: 15px;
@@ -1719,7 +2071,7 @@ video{
             display: none;
         }
         & a {
-            font-family: FuturaBookC;
+            font-family: 'FuturaBookC';
             text-decoration: none;
             font-size: 14px;
             line-height: 16px;
