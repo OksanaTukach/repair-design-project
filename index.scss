@@ -675,7 +675,6 @@ video{
                     display: flex;
                 }
             }
-
             label {
                 font-size: 15px;
                 line-height: 20px;
@@ -685,7 +684,13 @@ video{
                     color: rgba(255, 255, 255, 0.5);
                 }
             }
-
+            input:valid:not(:placeholder-shown) {
+                border-color: green;
+            }
+            
+            input:invalid:not(:placeholder-shown) {
+                border-color: red;
+            }
             input {
                 border-top: none;
                 border-left: none;
@@ -694,8 +699,7 @@ video{
                 font-size: 18px;
                 line-height: 24px;
                 color: #363636;
-                margin: 0 10px;
-                
+                margin: 0 10px; 
                 @media (max-width:700px){
                     width: 340px;
                     background-color: #131313;
@@ -705,7 +709,6 @@ video{
                     color: #FFFFFF;
                     border-bottom: 1px solid white;
                 }
-
             }
             .submit {
                 width: 200px;
@@ -736,12 +739,20 @@ video{
                 width: 400px;
                 left: 0;
                 right: 0;
+                width: 500px;
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 30px;
                 @media (max-width:700px){
                     display: none;
                 }
+            }
+            &__agree-none {
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                text-align: center;
             }
         }
     }
@@ -1067,6 +1078,13 @@ video{
                 margin: 0 10px;
                 background-color: black;
                 width: 400px;
+            }
+            input:valid:not(:placeholder-shown) {
+                border-color: green;
+            }
+            
+            input:invalid:not(:placeholder-shown) {
+                border-color: red;
             }
         }
         &__pigmoney {
@@ -1858,6 +1876,13 @@ video{
                     height: 45px;
                 }
             }
+            input:valid:not(:placeholder-shown) {
+                border-color: green;
+            }
+            
+            input:invalid:not(:placeholder-shown) {
+                border-color: red;
+            }
 
         }
         &__phone {
@@ -1888,6 +1913,13 @@ video{
                     height: 45px;
                 }
             }
+            input:valid:not(:placeholder-shown) {
+                border-color: green;
+            }
+            
+            input:invalid:not(:placeholder-shown) {
+                border-color: red;
+            }
         }
         &__question {
             flex-basis: 80%;
@@ -1916,6 +1948,13 @@ video{
                     width: 340px;
                     height: 45px;
                 }
+            }
+            input:valid:not(:placeholder-shown) {
+                border-color: green;
+            }
+            
+            input:invalid:not(:placeholder-shown) {
+                border-color: red;
             }
         }
         &__checkbox {

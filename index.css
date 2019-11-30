@@ -891,6 +891,14 @@ video {
   }
 }
 
+.main .block4 .form-signup input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.main .block4 .form-signup input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
 .main .block4 .form-signup input {
   border-top: none;
   border-left: none;
@@ -951,6 +959,7 @@ video {
   width: 400px;
   left: 0;
   right: 0;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -960,6 +969,14 @@ video {
   .main .block4 .form-signup__agree {
     display: none;
   }
+}
+
+.main .block4 .form-signup__agree-none {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .main .block5 {
@@ -1343,6 +1360,14 @@ video {
   margin: 0 10px;
   background-color: black;
   width: 400px;
+}
+
+.main .block6 .form-registration input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.main .block6 .form-registration input:invalid:not(:placeholder-shown) {
+  border-color: red;
 }
 
 .main .block6__pigmoney {
@@ -2389,6 +2414,14 @@ video {
   }
 }
 
+.main .block-registration__name input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.main .block-registration__name input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
 .main .block-registration__phone {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
@@ -2432,6 +2465,14 @@ video {
   }
 }
 
+.main .block-registration__phone input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.main .block-registration__phone input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
 .main .block-registration__question {
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
@@ -2473,6 +2514,14 @@ video {
     width: 340px;
     height: 45px;
   }
+}
+
+.main .block-registration__question input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.main .block-registration__question input:invalid:not(:placeholder-shown) {
+  border-color: red;
 }
 
 .main .block-registration__checkbox {
