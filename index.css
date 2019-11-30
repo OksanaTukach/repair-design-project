@@ -38,7 +38,7 @@
   src: local("ProximaNova-LightCondensed"), url("https://nomail.com.ua/files/woff/aee5e23445ebb8aaca3747470069d3a9.woff") format("woff");
 }
 
-body {
+.body {
   width: 100%;
   position: relative;
   margin-left: auto;
@@ -46,17 +46,31 @@ body {
 }
 
 @media (max-width: 375px) {
-  body {
+  .body {
     width: 375px;
     position: relative;
   }
 }
 
 @media (min-width: 1440px) {
-  body {
+  .body {
     width: 1440px;
     position: relative;
   }
+}
+
+input:focus {
+  outline: none;
+}
+
+input:active {
+  outline: none;
+  border: #E3B873;
+  font-size: .9em;
+}
+
+input:hover {
+  cursor: pointer;
 }
 
 video {
@@ -99,7 +113,7 @@ video {
 }
 
 .header__tel a {
-  color: white;
+  color: #E3B873;
   text-decoration: none;
 }
 
@@ -137,7 +151,6 @@ video {
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
-  border-radius: 10px;
   color: white;
 }
 
